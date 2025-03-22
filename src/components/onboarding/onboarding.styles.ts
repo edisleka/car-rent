@@ -7,11 +7,12 @@ const createStyles = () =>
   StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: colors.info,
+      backgroundColor: colors.white,
     },
     overLay: {
       flex: 1,
       paddingHorizontal: scale(18),
+      justifyContent: 'space-between',
     },
     logoContainer: {
       backgroundColor: colors.white,
@@ -30,6 +31,12 @@ const createStyles = () =>
     },
     textContainer: {
       marginTop: scale(30),
+    },
+    buttonStyles: {
+      marginBottom: scale(32),
+    },
+    buttonText: {
+      fontWeight: '500',
     },
   })
 

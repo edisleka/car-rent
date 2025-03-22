@@ -17,6 +17,7 @@ export const colors = {
   icon: 'rgb(140, 140, 140)', // Subtle gray for icons
   search: 'rgb(50, 50, 55)', // Darker input field bg
   border: 'rgb(80, 80, 80)', // Smooth UI separators
+  button: 'rgb(33, 41, 43)', // Darker button bg (contrast)
 
   // Additional UI Feedback Colors
   warning: 'rgb(255, 180, 40)', // Strong yellow for caution

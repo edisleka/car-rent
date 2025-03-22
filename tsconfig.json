@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base", // Extends the base configuration
+  "compilerOptions": {
+    // Compiler options
+    "strict": true, // Enable all strict type-checking options
+    "paths": {
+      // Path mapping
+      "@/*": ["./src/*"], // Map all files in the src directory
+      "@assets/*": ["./assets/*"] // Map all files in the assets directory
+    },
+    "forceConsistentCasingInFileNames": true // Enabled consistent casing
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"] // Include all TypeScript and TypeScript React files
+}

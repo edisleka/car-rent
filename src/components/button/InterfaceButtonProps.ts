@@ -4,4 +4,5 @@ export interface InterfaceButtonProps {
   text: string
   buttonStyles?: ViewStyle
   textStyles?: TextStyle
+  onPress?: () => void
 }

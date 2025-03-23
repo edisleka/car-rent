@@ -1,9 +1,11 @@
 import { View, Text, ImageBackground, Image } from 'react-native'
-import createStyles from '@/components/onboarding/onboarding.styles'
+import createStyles from '@/components/onBoarding/onBoardingOne/onBoardingOne.styles'
 import assets from '@/assets'
-import Button from '../button/button'
+import Button from '../../button/button'
+import { useRouter } from 'expo-router'
 
-export default function OnboardingScreen() {
+export default function OnBoardingOne() {
+  const router = useRouter()
   const styles = createStyles()
   const { carBg, logo, overlayBg } = assets
 
@@ -24,6 +26,7 @@ export default function OnboardingScreen() {
           </View>
         </View>
         <Button
+          onPress={() => router.push('/onboardingtwo')}
           text='Get Started'
           buttonStyles={styles.buttonStyles}
           textStyles={styles.buttonText}
